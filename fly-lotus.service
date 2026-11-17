@@ -5,7 +5,7 @@ Wants=network-online.target
 
 [Service]
 Environment=LOTUS_PATH=/opt/filecoin/run/fly-lotus
-ExecStart=/opt/filecoin/bin/fly-lotus daemon
+ExecStart=/opt/filecoin/bin/fly-lotus daemon --genesis=/opt/filecoin/build/fly-genesis/dragonfly.car --bootstrap=false
 KillSignal=SIGINT
 TimeoutStopSec=15min
 Restart=on-failure

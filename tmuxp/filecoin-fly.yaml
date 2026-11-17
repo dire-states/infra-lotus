@@ -1,0 +1,9 @@
+session_name: filecoin-fly
+environment:
+  LOTUS_PATH: /opt/filecoin/run/fly-lotus
+  LOTUS_MINER_PATH: /opt/filecoin/run/fly-genesis-miner
+windows:
+  - window_name: bash
+    start_directory: /opt/filecoin
+    panes:
+      -

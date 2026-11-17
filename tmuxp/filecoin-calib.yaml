@@ -1,0 +1,8 @@
+session_name: filecoin-calib
+environment:
+  LOTUS_PATH: /opt/filecoin/run/calib-lotus
+windows:
+  - window_name: bash
+    start_directory: /opt/filecoin
+    panes:
+      -
