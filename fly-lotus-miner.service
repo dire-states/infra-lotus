@@ -4,7 +4,7 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
-Environment=LOTSU_PATH=/opt/filecoin/run/fly-lotus
+Environment=LOTUS_PATH=/opt/filecoin/run/fly-lotus
 Environment=LOTUS_MINER_PATH=/opt/filecoin/run/fly-genesis-miner
 ExecStart=/opt/filecoin/bin/fly-lotus-miner run --nosync
 KillSignal=SIGINT
