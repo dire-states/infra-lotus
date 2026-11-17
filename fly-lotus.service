@@ -1,0 +1,12 @@
+[Unit]
+Description=Lotus node (calibnet)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Environment=LOTUS_PATH=/opt/filecoin/run/fly-lotus
+ExecStart=/opt/filecoin/bin/fly-lotus daemon
+KillSignal=SIGINT
+TimeoutStopSec=15min
+Restart=on-failure
+LimitNOFILE=1048576
